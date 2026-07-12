@@ -1,0 +1,60 @@
+<style>
+  :root {
+    --primary: #0B0560;
+    --accent: #11088E;
+    --lime: #C0FF4C;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Libre Franklin', system-ui, -apple-system, sans-serif;
+    background: #FFFFFF;
+    color: var(--primary);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+    color: var(--primary);
+  }
+  .card {
+    border-radius: 24px;
+    padding: 32px;
+    background: white;
+    border: 1px solid #EDEFF5;
+    box-shadow: 0 4px 20px rgba(11,5,96,0.04);
+    transition: all 0.3s ease;
+  }
+  .card:hover {
+    box-shadow: 0 12px 40px rgba(11,5,96,0.08);
+    transform: translateY(-2px);
+  }
+  .btn-lime {
+    background: var(--lime);
+    color: var(--primary);
+    border-radius: 16px;
+    padding: 14px 24px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s;
+    display: inline-block;
+    text-align: center;
+  }
+  .btn-lime:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(192,255,76,0.4); }
+  .btn-ghost {
+    border: 2px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 12px 22px;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+  .bullet li { display: flex; gap: 10px; margin-bottom: 8px; }
+  .bullet li::before {
+    content: "•";
+    color: var(--accent);
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1;
+  }
+</style>
